@@ -1,12 +1,20 @@
 package com.example.demo.test;
 
-import java.util.Arrays;
-
 public class T1 {
-    public static void main(String[] args) throws InterruptedException {
-        Thread.sleep(10000);
-        System.out.println(Arrays.toString(args));
+
+    static class Person {
+
+        private String name;
+
+        Person(String name) {
+            this.name = name;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Person p = new Person("Chris");
         Runtime runtime = Runtime.getRuntime();
-        System.out.println("T1:" + runtime + "," + runtime.maxMemory());
+        System.out.println("T1:" + runtime);
     }
 }
