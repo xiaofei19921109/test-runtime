@@ -9,20 +9,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DemoApplicationTests {
 
-    @Test
-    public void contextLoads() {
-    }
-
-    @Test
-    public void r1_test() throws InterruptedException {
-        Thread.sleep(15000);
-        System.out.println(Runtime.getRuntime());
-}
-
-    @Test
-    public void r2_test() throws InterruptedException {
-        Thread.sleep(15000);
-        System.out.println(Runtime.getRuntime());
-    }
+	@Test
+	public void contextLoads() {
+	}
 
 }
